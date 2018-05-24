@@ -26,6 +26,17 @@ func TestDropbox(t *testing.T) {
 	logger(upload(getCurrDir() + "out.jpg"))
 }
 
+func TestQR(t *testing.T) {
+	filename := "qr.jpg"
+
+	//do the image conversion
+	out := upload(getCurrDir() + "out.jpg")
+
+	//make qr
+	err := makeQR(filename, out)
+	catch(err)
+}
+
 func TestServer(t *testing.T) {
 
 	go startServer()

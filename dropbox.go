@@ -12,7 +12,7 @@ var (
 )
 
 const (
-	_token = secret_token
+	_token = _secretToken
 
 	_path = "https://www.dropbox.com/sh/wb5thm9h8qu4tfm/AAAlrfWeXQXxIN64gDL4gGQEa/Photoboo?dl=0&preview="
 )
