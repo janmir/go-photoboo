@@ -17,7 +17,8 @@ const (
 )
 
 var (
-	server *gin.Engine
+	server  *gin.Engine
+	request *gorequest.SuperAgent
 )
 
 func init() {
@@ -33,6 +34,10 @@ func init() {
 	if !_debug {
 		gin.SetMode(gin.ReleaseMode)
 	}
+
+	//init request object
+	request = gorequest.New()
+	//request.SetDebug(true)
 }
 
 func startServer() {
@@ -88,7 +93,7 @@ func getCurrDir() string {
 	return dir
 }
 
-func logger(arg string) {
+func logger(arg interface{}) {
 	if _debug {
 		log.Println(arg)
 	}

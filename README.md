@@ -7,11 +7,15 @@
 - [x] SNS Share and Upload module
     - [ ] Facebook Graph API
     - [x] Dropbox upload (github.com/stacktic/dropbox)
-    - [ ] Twitter
+    - [ ] Twitter API
+    - [ ] Lychee integration (for local)
 - [x] QR Generation Module (use https://github.com/skip2/go-qrcode)
 - [ ] Web Server
+- [ ] Terminal UI/Control Panel
 
-# Features
+# Term UI Features
+
+# Web UI Features
 - [ ] live view
 - [ ] live view frame
 - [ ] Single photo frame

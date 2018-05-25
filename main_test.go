@@ -52,3 +52,12 @@ func TestServer(t *testing.T) {
 func TestStartServer(t *testing.T) {
 	startServer()
 }
+
+func TestImageThumbnail(t *testing.T) {
+	logger("Thumbnail Test")
+	imageThumbnail("P5220193.ORF")
+}
+
+func TestImageList(t *testing.T) {
+	logger(imageList())
+}
